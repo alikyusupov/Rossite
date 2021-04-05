@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header style="display: flex;">
+
+        <div class="flex-row centered" style="width:20%;min-width: 200px">
+            <img id="logo" src="./media/logo.png" style="max-width:100%" alt="">
+        </div>
+        <div class="mobile-nav spacer">
+
+        </div>
+        <div class="mobile-nav">
+            <div class="flex-row centered" style="padding:20px">
+                <img src="./media/search.png" style="width:30px" alt="">
+            </div>
+            <div class="flex-row centered">
+                    <div class="icon">
+                        <div class="hamburger"></div>
+                    </div>
+            </div>
+        </div>
+        
+
+        <div class="desktop-nav" style="width:60%;">
+            <section class="flex-row">
+                <ul class="flex-row" style="
+                    width: 84%;
+                    border:1px solid lightgray;
+                    padding-right: 20px;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    ">
+                    <li>Главная</li>
+                    <li>Документы</li>
+                    <li>Доставка</li>
+                    <li>О Компании</li>
+                    <li>Портфолио</li>
+                    <li>Новости</li>
+                </ul>
+                <ul class="flex-row" style="
+                    width: 16%;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border:1px solid lightgray;
+                    ">
+                    <li>Ru</li>
+                    <li>En</li>
+                    <li>De</li>
+                </ul>
+            </section>
+            <section class="flex-row">
+                <div id="contacts" class="flex-row" style="
+                    width: 20%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    border:1px solid lightgray;
+                    ">
+                    <img src="./media/at.png" alt="">
+                    <span style="padding-left:5px;">
+                        Контакты
+                    </span>
+                </div>
+
+                <div id="products" class="flex-row" style="width: 20%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    border:1px solid lightgray;
+                    "
+                >
+                    <img src="./media/hash.png" style="max-width: 24px;" alt="">
+                    <span style="padding-left:5px;">Продукция</span>
+                </div>
+
+                <div class="flex-row" style="width: 60%;border:1px solid lightgray;">
+                    <input id="search"
+                        placeholder="Что Вы хотите найти?"
+                        style="width:100%;padding:10px" 
+                        type="text">
+                    <label for="search" class="flex-row centered" style="width:100px;background-color: lightgrey;">
+                        <img style="max-width: 24px;" src="./media/search.png" alt="">
+                    </label>
+                </div>
+
+
+            </section>
+        </div>
+        <div class="desktop-nav" style="width:20%;">
+            <section class="flex-row centered">
+                +7 (812) 629-03-56
+            </section>
+            <section class="flex-row centered" style="font-weight: bold;">
+                info@sparta-term.com
+            </section>
+        </div>
+    </header>
+    <div class="menu">
+            <ul class="flex-row centered">
+                <li>Ru</li>
+                <li>En</li>
+                <li>De</li>
+            </ul>
+        <div class="flex-row centered">
+            <span>+7 (812) 629-03-56</span>
+        </div>
+        <div class="flex-row centered">
+            <span>info@sparta-term.com</span>
+        </div>
+        <span>Menu Item</span>
+        <span>Menu Item</span>
+        <span>Menu Item</span>
+        <span>Menu Item</span>
+        <span>Menu Item</span>
+        <span>Menu Item</span>
+        <span>Menu Item</span>
+        <span>Menu Item</span>
+    </div>
+    <script>
+        const icon = document.querySelector(".icon")
+        const menu = document.querySelector(".menu")
+        icon.addEventListener("click",()=>{
+            menu.classList.toggle("active")
+            icon.classList.toggle("active")
+        })
+    </script>
+</body>
+</html>
